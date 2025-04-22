@@ -1,5 +1,10 @@
-# 📚 Campus Hub
 
+---
+# 📚 Campus Hub
+![GitHub repo size](https://img.shields.io/github/repo-size/Tammam11/Campus-hub)
+![GitHub last commit](https://img.shields.io/github/last-commit/Tammam11/Campus-hub)
+![GitHub issues](https://img.shields.io/github/issues/Tammam11/Campus-hub)
+![GitHub license](https://img.shields.io/github/license/Tammam11/Campus-hub)
 Campus Hub is a smart university facility and event management platform designed to streamline the booking of sports fields, classrooms, gym facilities, and more. It also enables real-time announcements, student activity organization, and attendance tracking.
 
 ---
@@ -22,7 +27,24 @@ Campus Hub is a smart university facility and event management platform designed
 - **Real-time Integration:** SignalR & API services
 
 ---
+## ✅ Development Progress
 
+- [x] Project Initialization
+- [x] GitHub Repo Setup
+- [x] README File Created
+- [x] Database Schema Planning
+- [x] Facility Booking System
+- [x] Classroom Availability Module
+- [x] Student Event Management
+- [x] chatbot delvopment
+- [ ] chatbot bulit-in
+- [ ] Real-Time Notifications
+- [ ] Admin Dashboard
+- [ ] Testing & Debugging
+- [ ] Final Deployment
+
+
+---
 ## 📦 Project Status
 🚧 **Campus Hub is currently under active development.**  
 Features and modules are being built step-by-step as per the planned phases.
