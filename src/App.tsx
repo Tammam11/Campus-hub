@@ -8,14 +8,19 @@ import StudentActivities from './components/StudentActivities';
 import ClassroomSchedule from './components/ClassroomSchedule';
 import StudentComplaints from './components/StudentComplaints';
 import FoodCourt from './components/FoodCourt';
-import ChatBot from './components/ChatBot';
+import Chatbot from './components/ChatBot';
 import Auth from './components/Auth';
 import Profile from './components/Profile';
+
+interface User {
+  id: string;
+  email?: string;
+}
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [showAuth, setShowAuth] = useState(false);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -44,9 +49,9 @@ function App() {
       {currentPage === 'schedule' && <ClassroomSchedule />}
       {currentPage === 'complaints' && <StudentComplaints user={user} />}
       {currentPage === 'food' && <FoodCourt />}
-      {currentPage === 'profile' && <Profile />}
+      {currentPage === 'profile' && user && <Profile user={user} />}
       
-      <ChatBot />
+      <Chatbot />
       
       {showAuth && <Auth onClose={() => setShowAuth(false)} />}
       <Toaster position="top-right" />
